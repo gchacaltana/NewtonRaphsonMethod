@@ -3,18 +3,20 @@
 __author__ = "Gonzalo Chacaltana"
 
 import sympy as sy
+import sys
+
 
 class NewtonRaphson(object):
 
     def __init__(self, x, fx, options):
         self.x, self.fx = x, fx
         self.options = options
-        self.limit_error = 1
         self.iterations, self.max_iterations = 0, 20
 
     def set_options(self):
         self.rounding = self.options['rounding'] if self.options['rounding'] else 2
         self._x = self.options['initial_root'] if self.options['initial_root'] else 0
+        self.max_error = self.options['max_error'] if self.options['max_error'] else 0.5
 
     def run(self):
         self.set_options()
@@ -25,7 +27,8 @@ class NewtonRaphson(object):
             self.evaluate()
 
     def calculate_root(self):
-        print("Iteracion {}".format(self.iterations))
+        print("\nIteracion {}".format(self.iterations))
+        print("-------------------")
         print("Estimacion de la raiz, cuando x = {}".format(self._x))
         self._y = round(self._x-(self.fx.subs(self.x, self._x) /
                                  self.df().subs(self.x, self._x)), self.rounding)
@@ -33,12 +36,17 @@ class NewtonRaphson(object):
 
     def calculate_error(self):
         self.error = (abs((self._y - self._x)/self._y))*100
-        print("Aproximacion del error absoluto: {}".format(str(self.error)+" %"))
+        print("Error absoluto: {}".format(str(self.error)+" %"))
 
     def evaluate(self):
-        stop = True if self.error<self.limit_error else False
-        if stop : raise Exception("Stop")
-        self._x = self._y
+        if (self.error < self.max_error):
+            print("El error absoluto relativo {} % es menor que el valor máximo esperado {} %".format(
+                self.error, self.max_error))
+            sys.exit()
+        else:
+            print("El error absoluto relativo {} % es mayor que el valor máximo esperado {} %".format(
+                self.error, self.max_error))
+            self._x = self._y
 
     def df(self):
         return sy.diff(self.fx, self.x)
