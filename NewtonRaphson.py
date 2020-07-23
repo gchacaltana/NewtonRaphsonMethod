@@ -2,22 +2,43 @@
 # -*- coding: utf-8 -*-
 __author__ = "Gonzalo Chacaltana"
 
-import numpy as np
 import sympy as sy
 
 class NewtonRaphson(object):
-    def __init__(self, x, fx):
-        self.x, self.fx = x, fx
 
-    def root(self,_x, decimal_points):
-        return round(_x-(self.fx.subs(x,_x)/self.df().subs(x,_x)),decimal_points)
+    def __init__(self, x, fx, options):
+        self.x, self.fx = x, fx
+        self.options = options
+        self.limit_error = 1
+        self.iterations, self.max_iterations = 0, 20
+
+    def set_options(self):
+        self.rounding = self.options['rounding'] if self.options['rounding'] else 2
+        self._x = self.options['initial_root'] if self.options['initial_root'] else 0
+
+    def run(self):
+        self.set_options()
+        while(self.iterations < self.max_iterations):
+            self.iterations = self.iterations+1
+            self.calculate_root()
+            self.calculate_error()
+            self.evaluate()
+
+    def calculate_root(self):
+        print("Iteracion {}".format(self.iterations))
+        print("Estimacion de la raiz, cuando x = {}".format(self._x))
+        self._y = round(self._x-(self.fx.subs(self.x, self._x) /
+                                 self.df().subs(self.x, self._x)), self.rounding)
+        print("Obtenemos: y = {}".format(self._y))
+
+    def calculate_error(self):
+        self.error = (abs((self._y - self._x)/self._y))*100
+        print("Aproximacion del error absoluto: {}".format(str(self.error)+" %"))
+
+    def evaluate(self):
+        stop = True if self.error<self.limit_error else False
+        if stop : raise Exception("Stop")
+        self._x = self._y
 
     def df(self):
-        return sy.diff(self.fx,self.x)
-
-if __name__ == "__main__":    
-    def f(x):return -0.50598*10**-10*x**3 + 0.38292*10**-7*x**2 + 0.74363*10**-4*x + 0.88318*10**-2
-    x = sy.Symbol('x')
-    fx = f(x)
-    nr = NewtonRaphson(x,fx)    
-    #sy.pprint(nr.df().subs(x,5))
+        return sy.diff(self.fx, self.x)
