@@ -9,9 +9,9 @@ if __name__ == "__main__":
             10**-7*x**2 + 0.74363*10**-4*x + 0.88318*10**-2
         x = sy.Symbol('x')
         config = {
-            "initial_root": -100,
+            "initial_root": 0,
             "rounding": 2,
-            "max_error": 0.5
+            "max_error": 0.01
         }
         nr = NewtonRaphson(x, f(x), config)
         nr.run()

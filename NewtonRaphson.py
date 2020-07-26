@@ -3,7 +3,7 @@
 __author__ = "Gonzalo Chacaltana"
 
 import sympy as sy
-import sys
+import sys,os
 
 
 class NewtonRaphson(object):
@@ -20,6 +20,9 @@ class NewtonRaphson(object):
 
     def run(self):
         self.set_options()
+        os.system('clear')
+        print("\nDada la funcion f(x)")
+        print("\nf(x) = {}".format(self.fx))
         while(self.iterations < self.max_iterations):
             self.iterations = self.iterations+1
             self.calculate_root()
@@ -40,11 +43,11 @@ class NewtonRaphson(object):
 
     def evaluate(self):
         if (self.error < self.max_error):
-            print("El error absoluto relativo {} % es menor que el valor máximo esperado {} %".format(
+            print("El error absoluto relativo {} % es menor que el valor maximo esperado {} %".format(
                 self.error, self.max_error))
             sys.exit()
         else:
-            print("El error absoluto relativo {} % es mayor que el valor máximo esperado {} %".format(
+            print("El error absoluto relativo {} % es mayor que el valor maximo esperado {} %".format(
                 self.error, self.max_error))
             self._x = self._y
 
