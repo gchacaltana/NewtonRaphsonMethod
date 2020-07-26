@@ -4,7 +4,7 @@
 
 Para hacer el punto de apoyo (Figura 1) de un puente basculante, un eje de acero largo y hueco llamado muñón se ajusta por contracción en un cubo de acero. El ensamblaje resultante del muñón de acero del cubo se ajusta por contracción en la viga del puente.
 
-![Figura 1: Montaje de muñón-cubo-viga]("http://solodatascience.com/wp-content/uploads/2020/07/newton-raphson-figura-01-trunnion.jpg")
+![Figura 1: Montaje de muñón-cubo-viga](http://solodatascience.com/wp-content/uploads/2020/07/newton-raphson-figura-01-trunnion.jpg)
 
 Esto se hace sumergiendo primero el muñón en un medio frío, como una mezcla de hielo seco/alcohol. Después de que el muñón alcanza la temperatura de estado estable del medio frío, el diámetro exterior del muñón se contrae. El muñón se saca del medio y se desliza por el orificio del cubo (Figura 2).
 
