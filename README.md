@@ -23,3 +23,9 @@ Para este nuevo puente, se necesita colocar un muñón hueco de diámetro exteri
 Para deslizar el muñón sin pegarse, también ha especificado una separación diametral de al menos <code>0.01"</code> entre el muñón y el cubo. Suponiendo que la temperatura ambiente es <code>80°F</code>, **¿es una decisión correcta sumergirlo en una mezcla de hielo seco / alcohol? ¿Qué temperatura? ¿necesita enfriar el muñón para obtener la contracción deseada?**
 
 La ecuación que proporciona la temperatura a la que se debe enfriar el muñón para obtener la contracción deseada viene dada por:
+
+<p align="center">
+  <img src="http://solodatascience.com/wp-content/uploads/2020/07/Newton-Raphson-figura-03.jpg" />
+</p>
+
+Use el **método de Newton-Raphson** para encontrar la raíz de T de las ecuaciones para encontrar la temperatura a la que se debe enfriar el muñón. Realice tres iteraciones para estimar la raíz de la ecuación anterior. Encuentre el error aproximado relativo absoluto al final de cada iteración y el número de dígitos significativos al menos correcto al final de cada iteración.
