@@ -21,3 +21,5 @@ Cuando el muñón se calienta, se expande y crea un ajuste de interferencia con 
 Para este nuevo puente, se necesita colocar un muñón hueco de diámetro exterior <code>12.363"</code> en un cubo de diámetro interior <code>12.358"</code>. Su plan es poner el muñón en la mezcla de hielo seco/alcohol (la temperatura del fluido - la mezcla de hielo seco/alcohol es <code>-108°F</code>) para contraer el muñón de modo que pueda deslizarse a través del orificio del cubo.
 
 Para deslizar el muñón sin pegarse, también ha especificado una separación diametral de al menos <code>0.01"</code> entre el muñón y el cubo. Suponiendo que la temperatura ambiente es <code>80°F</code>, **¿es una decisión correcta sumergirlo en una mezcla de hielo seco / alcohol? ¿Qué temperatura? ¿necesita enfriar el muñón para obtener la contracción deseada?**
+
+La ecuación que proporciona la temperatura a la que se debe enfriar el muñón para obtener la contracción deseada viene dada por:
