@@ -16,7 +16,7 @@ Esto se hace sumergiendo primero el muñón en un medio frío, como una mezcla d
   <br/>Figura 2: El muñón se desliza por el centro después de contraerse
 </p>
 
-Cuando el muñón se calienta, se expande y crea un ajuste de interferencia con el cubo. En 1995, en uno de los puentes en Florida, este procedimiento de ensamblaje no funcionó como fue diseñado. Antes de que el muñón se pudiera insertar completamente en el cubo, el muñón se atascó. Por lo tanto, se tuvo que pedir un nuevo muñón y un centro a un costo de $ 50,000. Junto con los retrasos en la construcción, la pérdida total fue de más de cien mil dólares. ¿Por qué se atascó el muñón? Esto se debía a que el muñón no se había contraído lo suficiente como para deslizarse a través del agujero.
+Cuando el muñón se calienta, se expande y crea un ajuste de interferencia con el cubo. En 1995, en uno de los puentes en Florida, este procedimiento de ensamblaje no funcionó como fue diseñado. Antes de que el muñón se pudiera insertar completamente en el cubo, el muñón se atascó. Por lo tanto, se tuvo que pedir un nuevo muñón valorizado en $ 50,000. Junto con los retrasos en la construcción, la pérdida total fue de más de cien mil dólares. **¿Por qué se atascó el muñón?** Esto se debía a que el muñón no se había contraído lo suficiente como para deslizarse a través del agujero.
 
 Para este nuevo puente, se necesita colocar un muñón hueco de diámetro exterior <code>12.363"</code> en un cubo de diámetro interior <code>12.358"</code>. Su plan es poner el muñón en la mezcla de hielo seco/alcohol (la temperatura del fluido - la mezcla de hielo seco/alcohol es <code>-108°F</code>) para contraer el muñón de modo que pueda deslizarse a través del orificio del cubo.
 
