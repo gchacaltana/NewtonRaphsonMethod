@@ -31,3 +31,17 @@ La ecuación que proporciona la temperatura a la que se debe enfriar el muñón 
 Use el **método de Newton-Raphson** para encontrar la raíz de T de las ecuaciones para encontrar la temperatura a la que se debe enfriar el muñón. Realice tres iteraciones para estimar la raíz de la ecuación anterior. Encuentre el error aproximado relativo absoluto al final de cada iteración y el número de dígitos significativos al menos correcto al final de cada iteración.
 
 Fuente: [Holistic Numerical Methods - Newton-Raphson Method](https://nm.mathforcollege.com/chapter-03-04-newton-raphson-method/)
+
+## Ejecución script python
+
+  python __init__.py
+
+  ![Figura 1](http://solodatascience.com/wp-content/uploads/2020/07/Newton-Raphson-pyhton-execution-01.jpg)
+
+## Proceso
+
+  ![Figura 2](http://solodatascience.com/wp-content/uploads/2020/07/Newton-Raphson-pyhton-execution-02.jpg)
+
+## Gráfico
+
+  ![Figura 3](http://solodatascience.com/wp-content/uploads/2020/07/Newton-Raphson-pyhton-execution-03.jpg)
