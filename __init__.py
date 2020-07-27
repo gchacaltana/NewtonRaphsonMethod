@@ -26,12 +26,12 @@ class Application(object):
     def input_values(self):
         os.system('clear')
         print("\n")
-        print("Aplicacion del Metodo de Newton-Raphson para resolver ecuaciones no lineales")
+        print(" Aplicacion del Metodo de Newton-Raphson para resolver ecuaciones no lineales")
         print("-----------------------------------------------------------------------------")
         self.initial_x = float(
-            input("\nIngrese el valor inicial de la temperatura de la mezcla: "))
+            input("\n Ingrese el valor inicial de la temperatura de la mezcla: "))
         self.max_error = float(
-            input("Ingrese el valor maximo del error absoluto relativo (%): "))
+            input("\n Ingrese el valor maximo del error absoluto relativo (%): "))
 
     def setConfig(self):
         self.config['initial_temp'] = self.initial_x
