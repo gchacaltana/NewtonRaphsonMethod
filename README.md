@@ -34,7 +34,9 @@ Fuente: [Holistic Numerical Methods - Newton-Raphson Method](https://nm.mathforc
 
 ## Ejecución script python
 
-  python __init__.py
+```bash
+py app.py
+```
 
   ![Figura 1](http://solodatascience.com/wp-content/uploads/2020/07/Newton-Raphson-pyhton-execution-01.jpg)
 
